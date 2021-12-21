@@ -24,7 +24,7 @@ int main()
 
     // Setting up effects
     // Using custom file with HRIR data
-    Binaurality bin("../HRTF/Sub1HRIR.bin", player.getFrameSize());
+    Binaurality bin("Sub1HRIR.bin", player.getFrameSize());
     Freeverb fv;
     player.applyEffect(fv);  // Reverberation
     player.applyEffect(bin); // Binauralization
